@@ -1,0 +1,8 @@
+<% if target.errors.present? %>
+  <p>The following errors prevented the record from being saved:</p>
+  <ul>
+    <% target.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>
