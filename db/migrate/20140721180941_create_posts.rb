@@ -8,8 +8,5 @@ class CreatePosts < ActiveRecord::Migration
 
       t.timestamps
     end
-    add_index :posts, :title
-    add_index :posts, :body
-    add_index :posts, :price
   end
 end

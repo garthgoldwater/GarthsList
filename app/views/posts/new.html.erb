@@ -1,1 +1,18 @@
-<%= render 'create_post_form' %>
+<div>
+  <h2>Make a new post</h2>
+  <%= form_for @post do |form| %>
+</div>
+<div>
+  <%= form.label :title %>
+  <%= form.text_field :title %>
+</div>
+<div>
+  <%= form.label :price %>
+  <%= form.text_field :price %>
+</div>
+<div>
+  <%= form.label :body %>
+  <%= form.text_area :body %>
+</div>
+<%= form.submit %>
+<% end %>

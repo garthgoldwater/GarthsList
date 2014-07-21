@@ -10,11 +10,12 @@ class PostsController < ApplicationController
 
   def create
     @post = current_user.posts.new(post_params)
+    @posts = current_user.posts
 
     if @post.save
-      redirect_to :posts_index
+      redirect_to :posts
     else
-      render :posts_index
+      render :new
     end
   end
 
