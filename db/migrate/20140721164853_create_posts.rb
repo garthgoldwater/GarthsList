@@ -3,7 +3,7 @@ class CreatePosts < ActiveRecord::Migration
     create_table :posts do |t|
       t.string :title, null: false
       t.text :body, null: false
-      t.integer :price
+      t.integer :price, null: true
       t.references :region, index: true, null: false
       t.references :category, index: true, null: false
       t.references :user, index: true, null: false
