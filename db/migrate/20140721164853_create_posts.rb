@@ -8,7 +8,7 @@ class CreatePosts < ActiveRecord::Migration
       t.references :category, index: true, null: false
       t.references :user, index: true, null: false
 
-      t.timestamps
+      t.timestamps null: false
     end
     add_index :posts, :title
     add_index :posts, :body
