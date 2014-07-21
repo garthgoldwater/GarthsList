@@ -1,0 +1,6 @@
+<h2>Categories</h2>
+<% if current_user.admin? %>
+  <%= link_to "Add a category", [:new, :category] %>
+<% end %>
+
+<%= render @categories %>
