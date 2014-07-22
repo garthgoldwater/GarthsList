@@ -17,6 +17,7 @@
 <div>
   <%= form.label :category %>
   <%= form.collection_select :category_id, @categories, :id, :name %>
+  <%= form.label :region %>
   <%= form.collection_select :region_id, @regions, :id, :name %>
 </div>
 <%= form.submit %>

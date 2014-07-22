@@ -12,3 +12,10 @@
     <%= render @regions %>
   </ul>
 </div>
+<div>
+  <%= form_for @category do |f| %>
+    <%= f.label "Name:", :name %>
+    <%= f.text_field :name %>
+    <%= f.submit %>
+  <% end %>
+</div>

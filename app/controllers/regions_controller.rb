@@ -1,5 +1,5 @@
 class RegionsController < ApplicationController
-  before_action :require_user_admin
+  before_action :require_admin
 
   def create
     @region = Region.new(region_params)
