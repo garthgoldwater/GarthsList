@@ -1,4 +1,6 @@
 class RegionsController < ApplicationController
+  before_action :require_user_admin
+
   def create
     @region = Region.new(region_params)
 
