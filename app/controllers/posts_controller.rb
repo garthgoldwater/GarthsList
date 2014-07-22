@@ -4,6 +4,10 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
+  def show
+    @post = Post.find(post_params[:id])
+  end
+
   def new
     @post = Post.new
     @categories = Category.all

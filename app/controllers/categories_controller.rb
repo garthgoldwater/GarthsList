@@ -4,12 +4,16 @@ class CategoriesController < ApplicationController
     @categories = Category.all
   end
 
+  def show
+    @category = Category.find(category_params[:id])
+  end
+
   def create
     @category = Category.new(category_params)
     if @category.save
       redirect_to :categories
     else
-      render :categories
+      render :index
     end
   end
 
