@@ -15,7 +15,7 @@
   <%= form.text_area :body %>
 </div>
 <div>
-  <%= options_from_collection_for_select(@regions, :id, :name) %>
+  <%= form.collection_select :region_id, @regions, :id, :name %>
 </div>
 <%= form.submit %>
 <% end %>
