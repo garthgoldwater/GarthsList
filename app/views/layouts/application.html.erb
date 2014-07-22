@@ -7,6 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div class="logo">
+  <%= image_tag "garthslist_logo.png" %>
+</div>
 <% if signed_in? %>
   <p> Welcome, <%= current_user.email %></p>
   <%= button_to "Sign out", :session, method: :delete %> 
