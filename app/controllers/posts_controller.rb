@@ -32,7 +32,8 @@ class PostsController < ApplicationController
       :title,
       :price,
       :body,
-      :category_id
+      :category_id,
+      :region_id,
     )
   end
 end
