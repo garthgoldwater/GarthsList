@@ -15,15 +15,13 @@
   <% if signed_in? %>
     <p> Welcome, <%= current_user.email %></p>
     <%= button_to "Sign out", :session, method: :delete %> 
-  <% else %>
-      <%= link_to "sign up", [:new, :user] %>
-      <%= link_to "sign in", [:new, :session] %>
-  <% end %>
-
-  <%= if signed_in? %>
     <% if current_user.admin? %>
       <%= link_to "admin panel", :admin %>
     <% end %>
+  <% else %>
+      <%= link_to "sign up", [:new, :user] %>
+      <%= link_to "sign in", [:new, :session] %>
+
   <% end %>
 
   <%= yield %>
