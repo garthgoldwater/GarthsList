@@ -20,7 +20,7 @@
       <%= link_to "sign in", [:new, :session] %>
   <% end %>
 
-  <% if current_user.admin? %>
+  <% if current_user && current_user.admin? %>
     <%= link_to "admin panel", :admin %>
   <% end %>
 

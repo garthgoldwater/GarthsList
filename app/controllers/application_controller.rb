@@ -1,6 +1,13 @@
 class ApplicationController < ActionController::Base
   include Monban::ControllerHelpers
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
   protect_from_forgery with: :exception
+
+  private
+
+  def require_user_admin
+    unless current_user.admin?
+      flash[:error] = "You must be an admin to access this section"
+      redirect_to :posts
+    end
+  end
 end
