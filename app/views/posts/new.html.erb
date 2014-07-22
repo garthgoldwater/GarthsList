@@ -17,5 +17,6 @@
 <div>
   <%= form.label :category %>
   <%= form.collection_select :category_id, @categories, :id, :name %>
+</div>
 <%= form.submit %>
 <% end %>

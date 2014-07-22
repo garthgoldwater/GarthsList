@@ -1,10 +1,14 @@
 <h2>Categories</h2>
 <% if current_user.admin? %>
+  <div>
   <%= form_for @category do |f| %>
     <%= f.label "Name:", :name %>
     <%= f.text_field :name %>
     <%= f.submit %>
   <% end %>
+  </div>
 <% end %>
 
-<%= render @categories %>
+<ul>
+  <%= render @categories %>
+</ul>
