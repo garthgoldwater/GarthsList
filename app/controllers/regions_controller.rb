@@ -1,6 +1,6 @@
 class RegionsController < ApplicationController
   def create
-    @region = Region.create(region_params)
+    @region = Region.new(region_params)
 
     if @region.save
       redirect_to :admin
