@@ -37,6 +37,12 @@ ActiveRecord::Schema.define(version: 20140722141847) do
   add_index "posts", ["category_id"], name: "index_posts_on_category_id", using: :btree
   add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
 
+  create_table "regions", force: true do |t|
+    t.string   "name",       null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: true do |t|
     t.string   "email",                           null: false
     t.string   "password_digest",                 null: false

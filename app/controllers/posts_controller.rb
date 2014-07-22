@@ -11,6 +11,7 @@ class PostsController < ApplicationController
   def new
     @post = Post.new
     @categories = Category.all
+    @regions = Region.all
   end
 
   def create

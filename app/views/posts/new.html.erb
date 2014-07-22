@@ -17,6 +17,7 @@
 <div>
   <%= form.label :category %>
   <%= form.collection_select :category_id, @categories, :id, :name %>
+  <%= options_from_collection_for_select(@regions, :id, :name) %>
 </div>
 <%= form.submit %>
 <% end %>
