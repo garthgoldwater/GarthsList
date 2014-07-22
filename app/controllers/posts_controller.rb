@@ -6,6 +6,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
+    @categories = Category.all
   end
 
   def create
@@ -26,6 +27,7 @@ class PostsController < ApplicationController
       :title,
       :price,
       :body,
+      :category_id
     )
   end
 end

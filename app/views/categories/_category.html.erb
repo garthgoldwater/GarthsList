@@ -1,0 +1,4 @@
+<h2><%= category.name %></h2>
+<% category.posts.each do |post| %>
+  <li><%= link_to post.title, post %></li>
+<% end %>

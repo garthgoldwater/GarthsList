@@ -1,15 +1,17 @@
 class CategoriesController < ApplicationController
   def index
+    @category = Category.new
     @categories = Category.all
     @user = current_user
   end
 
-  def new
-    @category = Category.new
-  end
-
   def create
-    redirect_to :categories
+    @category = Category.new(category_params)
+    if @category.save
+      redirect_to :categories
+    else
+      render :categories
+    end
   end
 
   def show

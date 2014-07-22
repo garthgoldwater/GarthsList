@@ -1,6 +1,10 @@
 <h2>Categories</h2>
 <% if current_user.admin? %>
-  <%= link_to "Add a category", [:new, :category] %>
+  <%= form_for @category do |f| %>
+    <%= f.label "Name:", :name %>
+    <%= f.text_field :name %>
+    <%= f.submit %>
+  <% end %>
 <% end %>
 
 <%= render @categories %>
