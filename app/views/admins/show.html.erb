@@ -1,0 +1,14 @@
+<h2>Admin Panel</h2>
+<div>
+  <%= form_for @region do |form| %>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+    <%= form.submit "Add new region" %>
+<% end %>
+</div>
+<div>
+  <h3>Regions</h3>
+  <ul>
+    <%= render @regions %>
+  </ul>
+</div>

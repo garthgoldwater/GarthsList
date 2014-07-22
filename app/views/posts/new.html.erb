@@ -14,5 +14,8 @@
   <%= form.label :body %>
   <%= form.text_area :body %>
 </div>
+<div>
+  <%= form.collection_select :region_id, @regions, :id, :name %>
+</div>
 <%= form.submit %>
 <% end %>
