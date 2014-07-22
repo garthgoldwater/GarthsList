@@ -2,7 +2,6 @@ class CategoriesController < ApplicationController
   def index
     @category = Category.new
     @categories = Category.all
-    @user = current_user
   end
 
   def create
