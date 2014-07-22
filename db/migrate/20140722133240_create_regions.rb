@@ -5,6 +5,6 @@ class CreateRegions < ActiveRecord::Migration
 
       t.timestamps null: false
     end
-    add_index :name, unique: true
+    add_index :regions, :name, unique: true
   end
 end
