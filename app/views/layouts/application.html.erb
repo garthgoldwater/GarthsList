@@ -20,8 +20,10 @@
       <%= link_to "sign in", [:new, :session] %>
   <% end %>
 
-  <% if current_user && current_user.admin? %>
-    <%= link_to "admin panel", :admin %>
+  <%= if signed_in? %>
+    <% if current_user.admin? %>
+      <%= link_to "admin panel", :admin %>
+    <% end %>
   <% end %>
 
   <%= yield %>
