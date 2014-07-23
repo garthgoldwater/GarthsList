@@ -1,1 +1,6 @@
-<%= render @category %>
+<h2>All posts in <%= @category.name %> category</h2>
+<div class="list-grid">
+  <ul>
+    <%= render @category.posts %>
+  </ul>
+</div>
