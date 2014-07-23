@@ -52,8 +52,4 @@ class PostsController < ApplicationController
       :region_id,
     )
   end
-
-  def current_post
-    Post.find(params[:id])
-  end
 end
