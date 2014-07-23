@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :users, only: [:new, :create]
   resources :posts do
     resource :spam, only: [:create, :destroy]
+    resources :images, only: [:new, :create]
   end
   resources :spams, only: [:index]
   resources :categories, only: [:new, :create, :index, :show]
