@@ -5,4 +5,8 @@ class Post < ActiveRecord::Base
   belongs_to :user
   belongs_to :category
   belongs_to :region
+
+  delegate :name, to: :category, prefix: true
+  delegate :name, to: :region, prefix: true
+  delegate :email, to: :user, prefix: true
 end
