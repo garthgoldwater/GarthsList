@@ -5,7 +5,10 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(post_params[:id])
+    @post = Post.find(params[:id])
+    @user = User.find(@post.user_id)
+    @category = Category.find(@post.category_id)
+    @region = Region.find(@post.region_id)
   end
 
   def new
@@ -23,6 +26,11 @@ class PostsController < ApplicationController
     else
       render :new
     end
+  end
+
+  def destroy
+    Post.destroy(params[:id])
+    redirect_to :posts
   end
 
   private
