@@ -1,14 +1,13 @@
-<div class="display-post">
-  <h2><%= @post.title %></h2>
-  <h4> by <%= mail_to @post.user_email %> </h4>
-  <p><%= @post.body %></p>
-
-  <% if current_user.owns?(@post) %>
-    <%= button_to "Delete this post", :post, method: :delete %>
-  <% end %>
-
-  <div class="post-footer">
-    Category: <%= link_to @post.category_name, @post.category %>
-    Region: <%= link_to @post.region_name, @post.region %>
+<section class="outer-container">
+  <div class="post">
+    <h2 class="page-title">View Post</h2>
+    <h4 class="sub-title"><%= @post.title.capitalize %></h4>
+    <p>Posted by: <%= mail_to @post.user_email %></p>
+    <p><%= @post.body %></p>
+    <% if current_user.owns?(@post) %>
+      <%= button_to "Delete this post", :post, method: :delete %>
+    <% end %>
+    <p>Category: <%= link_to @post.category_name, @post.category %></p>
+    <p>Region: <%= link_to @post.region_name, @post.region %></p>
   </div>
-</div>
+</section>
