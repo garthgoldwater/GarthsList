@@ -41,6 +41,13 @@ class PostsController < ApplicationController
     redirect_to post
   end
 
+  def update
+    @post = Post.find(params[:id])
+    if current_user.owns?(@post)
+      @post.update
+    end
+  end
+
   private
 
   def post_params
