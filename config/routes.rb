@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   resources :posts, only: [:new, :create, :index, :show]
   resources :categories, only: [:new, :create, :index, :show]
   resource :admin, only: [:show]
-  resources :regions, only: [:new, :create]
+  resources :regions, only: [:new, :create, :index, :show]
 
   constraints Monban::Constraints::SignedIn.new do
     root "posts#index", as: :index
