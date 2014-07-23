@@ -1,0 +1,10 @@
+<ul>
+  <p class="welcome"> Welcome, <%= current_user.email %></p>
+  <li><%= link_to "Categories", :categories %></li>
+  <li><%= link_to "Regions", :regions %></li>
+  <li><%= link_to "New Post", [:new, :post] %></li>
+  <% if current_user.admin? %>
+    <li><%= link_to "Admin Panel", :admin, class: "button-right" %></li>
+  <% end %>
+  <li><%= button_to "Sign out", :session, method: :delete, class: "button-left" %></li>
+</ul>

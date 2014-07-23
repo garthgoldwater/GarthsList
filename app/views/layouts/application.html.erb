@@ -15,14 +15,12 @@
   </div>
   <div class="login">
     <% if signed_in? %>
-      <p class="welcome"> Welcome, <%= current_user.email %></p>
-      <%= button_to "Sign out", :session, method: :delete, class: "button-left" %>
-      <% if current_user.admin? %>
-        <%= button_to "Admin Panel", :admin, method: :get, class: "button-right" %>
-      <% end %>
+      <%= render "nav" %>
     <% else %>
-        <%= link_to "Sign Up", [:new, :user], class: "button-left" %>
-        <%= link_to "Sign In", [:new, :session], class: "button-right" %>
+      <nav>
+      <%= link_to "Sign Up", [:new, :user], class: "button-left" %>
+      <%= link_to "Sign In", [:new, :session], class: "button-right" %>
+      </nav>
     <% end %>
   </div>
 </section>
