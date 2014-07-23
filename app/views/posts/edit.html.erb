@@ -1,0 +1,11 @@
+<div class="form">
+  <%= form_for @post do |form| %>
+    <%= form.label "Title: ", :title %>
+    <%= form.text_field :title %>
+    <%= form.label "Price: ", :price %>
+    <%= form.text_field :price %>
+    <%= form.label "Body: ", :body %>
+    <%= form.text_area :body %>
+    <%= form.submit "Submit Edits", class: "submit" %>
+  <% end %>
+</div>

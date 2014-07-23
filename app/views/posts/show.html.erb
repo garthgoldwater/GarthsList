@@ -2,9 +2,10 @@
   <h2><%= @post.title %></h2>
   <h4> by <%= mail_to @post.user_email %> </h4>
   <p><%= @post.body %></p>
+  <p>Price: <%= @post.price %></p>
 
   <% if current_user.owns?(@post) %>
-    <%= button_to "Edit this post", :post, method: :patch %>
+    <%= button_to "Edit this post", [:edit, :post], method: :get %>
     <%= button_to "Delete this post", :post, method: :delete %>
   <% end %>
 
