@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <section class="outer-container">
   <div class="post">
     <h2 class="page-title">View Post</h2>
@@ -5,6 +6,7 @@
     <p>Posted by: <%= mail_to @post.user_email %></p>
     <p><%= @post.body %></p>
     <% if current_user.owns?(@post) %>
+      <%= button_to "Edit this post", :post, method: :patch %>
       <%= button_to "Delete this post", :post, method: :delete %>
     <% end %>
     <p>Category: <%= link_to @post.category_name, @post.category %></p>
