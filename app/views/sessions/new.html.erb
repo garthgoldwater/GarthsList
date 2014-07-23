@@ -1,10 +1,12 @@
-<h2 class="page-title">Welcome, please sign in!</h2>
-<div class="form">
-  <%= form_for :session, url: session_path do |form| %>
-    <%= form.label :email %>
+<section class="outer-container">
+  <h2 class="page-title">Welcome, please sign in!</h2>
+  <div class="form">
+    <%= form_for :session, url: session_path do |form| %>
+      <%= form.label :email %>
     <%= form.email_field :email %>
     <%= form.label :password %>
     <%= form.password_field :password %>
     <%= form.submit "Sign in" %>
   <% end %>
-</div>
+  </div>
+</section>
