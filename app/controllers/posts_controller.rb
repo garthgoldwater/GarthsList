@@ -29,10 +29,8 @@ class PostsController < ApplicationController
 
   def destroy
     post = Post.find(params[:id])
-    if current_user.owns?(post)
-      post.destroy
-      redirect_to :posts
-    end
+    post.destroy
+    redirect_to :posts
   end
 
   def edit
@@ -41,9 +39,7 @@ class PostsController < ApplicationController
 
   def update
     post = Post.find(params[:id])
-    if current_user.owns?(post)
-      post.update(post_params)
-    end
+    post.update(post_params)
     redirect_to post
   end
 
