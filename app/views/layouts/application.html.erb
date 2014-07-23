@@ -7,22 +7,25 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<section class="header">
   <div class="logo">
     <%= link_to :posts do %>
       <%= image_tag "garthslist_logo.png" %>
     <% end %>
   </div>
-  <% if signed_in? %>
-    <p> Welcome, <%= current_user.email %></p>
-    <%= button_to "Sign out", :session, method: :delete %> 
-    <% if current_user.admin? %>
-      <%= link_to "admin panel", :admin %>
+  <div class="login">
+    <% if signed_in? %>
+      <p> Welcome, <%= current_user.email %></p>
+      <%= button_to "Sign out", :session, method: :delete %> 
+      <% if current_user.admin? %>
+        <%= button_to "Admin Panel", :admin, method: :get %>
+      <% end %>
+    <% else %>
+        <%= link_to "Sign Up", [:new, :user] %>
+        <%= link_to "Sign In", [:new, :session] %>
     <% end %>
-  <% else %>
-      <%= link_to "sign up", [:new, :user] %>
-      <%= link_to "sign in", [:new, :session] %>
-
-  <% end %>
+  </div>
+</section>
 
   <%= yield %>
 

@@ -1,0 +1,9 @@
+.header {
+  @include outer-container;
+}
+.logo {
+  @include span-columns(7);
+}
+.login {
+  @include span-columns(5);
+}
