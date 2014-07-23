@@ -1,3 +1,7 @@
-<h2>Posts</h2>
-<%= button_to "Make new post!", [:new, :post], method: :get %>
-<%= render @posts %>
+<h2 class="page-title">Posts</h2>
+<%= button_to "Make new post!", [:new, :post], method: :get, class: "post-button" %>
+<div class="list-grid">
+  <ul>
+    <%= render @posts %>
+  </ul>
+</div>

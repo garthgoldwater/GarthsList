@@ -1,16 +1,4 @@
-<h2>Categories</h2>
-<% if current_user.admin? %>
-  <div>
-    <%= form_for @category do |f| %>
-      <%= f.label "Name:", :name %>
-      <%= f.text_field :name %>
-      <%= f.submit %>
-    <% end %>
-  </div>
-<% end %>
-
+<h2 class="page-title">Categories</h2>
 <ul>
-  <% @categories.each do |category| %>
-    <li><%= link_to category.name, category %></li>
-  <% end %>
+  <%= render @categories %>
 </ul>
