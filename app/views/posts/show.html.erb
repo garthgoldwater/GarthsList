@@ -7,6 +7,10 @@
       <%= button_to "Edit this post", :post, method: :patch %>
       <%= button_to "Delete this post", :post, method: :delete %>
     <% end %>
-    <p>Category: <%= link_to @post.category_name, @post.category %> Region: <%= link_to @post.region_name, @post.region %></p>
+    <p>Category: <%= link_to @post.category_name, @post.category %></p>
+    <p>Region: <%= link_to @post.region_name, @post.region %></p>
+    <%= if !@post.spam %>
+      <p><%= button_to "Flag this post as spam", [@post, :spam] %></p>
+    <% end %>
   </div>
 </section>
