@@ -3,7 +3,7 @@
   <li><%= link_to "Regions", :regions %></li>
   <li><%= link_to "New Post", [:new, :post] %></li>
   <% if current_user.admin? %>
-    <li><%= link_to "Admin Panel", :admin%></li>
+    <li><%= link_to "Admin Panel", :admin %></li>
   <% end %>
   <li><%= button_to "Sign out", :session, method: :delete %></li>
 </ul>
