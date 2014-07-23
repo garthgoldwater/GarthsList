@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :require_ownership, only: [:delete, :edit, :update]
+
   def index
     @posts = current_user.posts
     @post = Post.new
