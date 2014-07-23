@@ -4,6 +4,7 @@
   <p><%= @post.body %></p>
 
   <% if current_user.owns?(@post) %>
+    <%= button_to "Edit this post", :post, method: :patch %>
     <%= button_to "Delete this post", :post, method: :delete %>
   <% end %>
 
