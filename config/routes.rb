@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :posts do
     resource :spam, only: [:create]
   end
+  resources :spams, only: [:index]
   resources :categories, only: [:new, :create, :index, :show]
   resource :admin, only: [:show]
   resource :landing, only: [:show]
