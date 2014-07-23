@@ -17,8 +17,4 @@ class ApplicationController < ActionController::Base
       redirect_to :landing
     end
   end
-
-  def current_post
-    Post.find(params[:id])
-  end
 end
