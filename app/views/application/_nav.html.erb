@@ -1,7 +1,7 @@
 <ul>
   <p class="welcome"> Welcome, <%= current_user.email %></p>
   <li><%= link_to "Categories", :categories %></li>
-  <li><%= link_to "Regions", :landing %></li>
+  <li><%= link_to "Regions", :regions %></li>
   <li><%= link_to "New Post", [:new, :post] %></li>
   <li><%= link_to "My Posts", :posts %></li>
   <% if current_user.admin? %>
