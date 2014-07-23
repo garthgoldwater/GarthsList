@@ -1,5 +1,5 @@
 class RegionsController < ApplicationController
-  before_action :require_admin
+  before_action :require_admin, only: [:create]
 
   def create
     @region = Region.new(region_params)
@@ -17,6 +17,7 @@ class RegionsController < ApplicationController
 
   def show
     @region = Region.find(params[:id])
+    @categories = Category.all
   end
 
   private

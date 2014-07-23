@@ -9,7 +9,7 @@
 <body>
 <section class="header">
   <div class="logo">
-    <%= link_to :posts do %>
+    <%= link_to :regions do %>
       <div class="logo-image"></div>
     <% end %>
   </div>
@@ -23,6 +23,12 @@
       </nav>
     <% end %>
   </div>
+</section>
+
+<section class="errors">
+  <% if flash.any? %>
+    <%= flash[:error] %>
+  <% end %>
 </section>
 
   <%= yield %>
