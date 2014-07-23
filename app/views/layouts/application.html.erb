@@ -10,19 +10,19 @@
 <section class="header">
   <div class="logo">
     <%= link_to :posts do %>
-      <%= image_tag "garthslist_logo.png" %>
+      <div class="logo-image"></div>
     <% end %>
   </div>
   <div class="login">
     <% if signed_in? %>
-      <p> Welcome, <%= current_user.email %></p>
-      <%= button_to "Sign out", :session, method: :delete %> 
+      <p class="welcome"> Welcome, <%= current_user.email %></p>
+      <%= button_to "Sign out", :session, method: :delete, class: "button-left" %>
       <% if current_user.admin? %>
-        <%= button_to "Admin Panel", :admin, method: :get %>
+        <%= button_to "Admin Panel", :admin, method: :get, class: "button-right" %>
       <% end %>
     <% else %>
-        <%= link_to "Sign Up", [:new, :user] %>
-        <%= link_to "Sign In", [:new, :session] %>
+        <%= link_to "Sign Up", [:new, :user], class: "button-left" %>
+        <%= link_to "Sign In", [:new, :session], class: "button-right" %>
     <% end %>
   </div>
 </section>

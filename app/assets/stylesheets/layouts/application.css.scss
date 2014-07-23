@@ -1,9 +1,26 @@
 .header {
   @include outer-container;
+  max-width: 90%;
 }
 .logo {
-  @include span-columns(7);
+  @include span-columns(6);
+  .logo-image {
+    @include span-columns(6 of 6);
+    height: 70px;
+    background-image: url("garthslist_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }
 .login {
-  @include span-columns(5);
+  @include span-columns(6);
+  .welcome {
+    @include span_columns(2 of 6);
+  }
+  .button-left {
+    @include span-columns(2 of 6);
+  }
+  .button-right {
+    @include span-columns(2 of 6);
+  }
 }
