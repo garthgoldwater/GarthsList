@@ -25,11 +25,11 @@
   </div>
 </section>
 
-<section class="errors">
   <% if flash.any? %>
-    <%= flash[:error] %>
+    <div class="error">
+      <span><%= flash[:error] %></span>
+    </div>
   <% end %>
-</section>
 
   <%= yield %>
 

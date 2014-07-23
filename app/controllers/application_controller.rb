@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   def require_admin
     unless current_user.admin?
       flash[:error] = "You must be an admin to access this section"
-      redirect_to :landings
+      redirect_to :landing
     end
   end
 end
