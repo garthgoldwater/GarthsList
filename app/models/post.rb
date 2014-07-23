@@ -4,4 +4,5 @@ class Post < ActiveRecord::Base
   validates :user, presence: true
   belongs_to :user
   belongs_to :category
+  belongs_to :region
 end
