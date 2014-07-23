@@ -1,16 +1,18 @@
 <section class="outer-container">
 <h2 class="page-title">Admin Panel</h2>
 <div class="form">
+  <h4 class="sub-title">Add a region</h4>
   <%= form_for @region do |form| %>
     <%= form.label :name %>
     <%= form.text_field :name %>
-    <%= form.submit "Add new region" %>
+    <%= form.submit "Add Region" %>
   <% end %>
 </div>
 <div class="form">
+  <h4 class="sub-title">Add a category</h4>
   <%= form_for @category do |f| %>
-    <%= f.label "Name:", :name %>
+    <%= f.label :name %>
     <%= f.text_field :name %>
-    <%= f.submit %>
+    <%= f.submit "Add Category" %>
   <% end %>
 </div>

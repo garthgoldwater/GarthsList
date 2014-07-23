@@ -1,6 +1,8 @@
-<h2 class="page-title">All posts in the <%= @category.name.downcase %> category</h2>
-<div class="list-grid">
-  <ul>
-    <%= render @category.posts %>
-  </ul>
-</div>
+<section class="outer-container">
+  <h2 class="page-title">All posts in the <%= @category.name.downcase %> category</h2>
+  <div class="list-grid">
+    <ul>
+      <%= render @category.posts %>
+    </ul>
+  </div>
+</section>

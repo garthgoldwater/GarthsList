@@ -1,0 +1,29 @@
+.outer-container {
+  @include outer-container;
+}
+.page-title {
+  @include span-columns(12);
+  margin: 50px 0 20px 0;
+}
+.sub-title {
+  margin: 20px 10px;
+}
+.form {
+  @include span-columns(6);
+}
+.post-button {
+  margin: 20px 0;
+}
+.list-grid {
+  li {
+    @include span-columns(3);
+    @include omega(4n);
+    text-align: center;
+    vertical-align: center;
+    padding: 30px 0;
+    background-color: $base-button-color;
+    a {
+      color: white;
+    }
+  }
+}
