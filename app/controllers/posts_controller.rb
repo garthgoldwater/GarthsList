@@ -26,8 +26,11 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    Post.destroy(params[:id])
-    redirect_to :posts
+    post = Post.find(params[:id])
+    if current_user.owns?(post)
+      Post.destroy(params[:id])
+      redirect_to :posts
+    end
   end
 
   private

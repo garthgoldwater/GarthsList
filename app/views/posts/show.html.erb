@@ -3,13 +3,12 @@
   <h4> by <%= mail_to @user.email %> </h4>
   <p><%= @post.body %></p>
 
-  <% if @user == current_user %>
+  <% if current_user.owns?(@post) %>
     <%= button_to "Delete this post", :post, method: :delete%>
   <% end %>
 
-  <div class = "post-footer">
+  <div class="post-footer">
     Category: <%= link_to @category.name, @category %>
     Region: <%= link_to @region.name, @region %>
   </div>
-
 </div>
