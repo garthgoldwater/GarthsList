@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     @posts = current_user.posts
 
     if @post.save
-      redirect_to :posts
+      redirect_to [:new, @post, :image]
     else
       render :new
     end

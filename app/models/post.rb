@@ -5,6 +5,7 @@ class Post < ActiveRecord::Base
   belongs_to :user
   belongs_to :category
   belongs_to :region
+  has_many :images
 
   delegate :name, to: :category, prefix: true
   delegate :name, to: :region, prefix: true
