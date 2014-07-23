@@ -1,4 +1,5 @@
 class SpamsController < ApplicationController
+<<<<<<< HEAD
   before_action :require_admin, only: [:destroy, :index]
 
   def create
