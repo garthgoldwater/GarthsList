@@ -10,11 +10,4 @@ class ApplicationController < ActionController::Base
       redirect_to :landing
     end
   end
-
-  def require_ownership
-    unless current_user.owns?(current_post)
-      flash[:error] = "You must own a post to change it."
-      redirect_to :landing
-    end
-  end
 end
