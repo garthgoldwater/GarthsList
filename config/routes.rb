@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resource :session, only: [:new, :create, :destroy]
   resources :users, only: [:new, :create]
   resources :posts do
-    resource :spam, only: [:create]
+    resource :spam, only: [:create, :destroy]
   end
   resources :spams, only: [:index]
   resources :categories, only: [:new, :create, :index, :show]
