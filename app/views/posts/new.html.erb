@@ -1,24 +1,24 @@
-<div>
   <h2>Make a new post</h2>
   <%= form_for @post do |form| %>
-</div>
-<div>
+<div class="form">
   <%= form.label :title %>
   <%= form.text_field :title %>
 </div>
-<div>
+<div class="form">
   <%= form.label :price %>
   <%= form.text_field :price %>
 </div>
-<div>
+<div class="form">
   <%= form.label :body %>
   <%= form.text_area :body %>
 </div>
-<div>
+<div class="form">
   <%= form.label :category %>
   <%= form.collection_select :category_id, @categories, :id, :name %>
   <%= form.label :region %>
   <%= form.collection_select :region_id, @regions, :id, :name %>
 </div>
-<div><%= form.submit %></div>
+<div class="submit">
+  <%= form.submit %>
+</div>
 <% end %>

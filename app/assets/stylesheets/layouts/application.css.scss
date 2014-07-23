@@ -1,6 +1,5 @@
 .header {
   @include outer-container;
-  max-width: 90%;
 }
 .logo {
   @include span-columns(6);
@@ -12,7 +11,7 @@
     background-repeat: no-repeat;
   }
 }
-.login {
+.nav {
   @include span-columns(6);
   .welcome {
     @include span_columns(2 of 6);
