@@ -1,6 +1,5 @@
 <section class="outer-container">
   <div class="post">
-    <h2 class="page-title">View Post</h2>
     <h4 class="sub-title"><%= @post.title.capitalize %></h4>
     <p>Posted by: <%= mail_to @post.user_email %></p>
     <p><%= @post.body %></p>
@@ -8,7 +7,6 @@
       <%= button_to "Edit this post", :post, method: :patch %>
       <%= button_to "Delete this post", :post, method: :delete %>
     <% end %>
-    <p>Category: <%= link_to @post.category_name, @post.category %></p>
-    <p>Region: <%= link_to @post.region_name, @post.region %></p>
+    <p>Category: <%= link_to @post.category_name, @post.category %> Region: <%= link_to @post.region_name, @post.region %></p>
   </div>
 </section>

@@ -12,7 +12,10 @@
   @include span-columns(6);
 }
 .post {
-  @include span-columns(6);
+  @include span-columns(8);
+  @include shift(2);
+  text-align: center;
+  margin-top: 50px;
   p {
     margin: 30px 0;
     font-size: $base-font-size * 1.1;
@@ -23,15 +26,21 @@
 }
 .post-button {
   @include span-columns(3);
-  margin: 50px 20px 20px 0;
+  margin: 60px 20px 20px 0;
 }
 .list-grid {
+  li:hover {
+    @include animation-timing-function(ease);
+    background-color: $hover-link-color;
+  }
   li {
     @include span-columns(3);
     @include omega(4n);
     text-align: center;
     vertical-align: center;
-    padding: 30px 0;
+    margin-top: 15px;
+    padding: 40px 0;
+    border-radius: 100%;
     background-color: $base-button-color;
     a {
       color: white;
