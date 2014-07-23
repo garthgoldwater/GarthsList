@@ -6,8 +6,8 @@ Rails.application.routes.draw do
   resources :posts, only: [:new, :create, :index, :show]
   resources :categories, only: [:new, :create, :index, :show]
   resource :admin, only: [:show]
+  resource :landing, only: [:show]
   resources :regions, only: [:new, :create, :index, :show]
-  resources :landings, only: [:show]
 
   root to: "landings#show"
 end
