@@ -3,13 +3,13 @@ class SpamsController < ApplicationController
 
   def create
     post = Post.find(params[:post_id])
-    post.spam!
+    post.mark_spam
     redirect_to post
   end
 
   def destroy
     post = Post.find(params[:post_id])
-    post.not_spam!
+    post.mark_not_spam
     redirect_to post
   end
 
