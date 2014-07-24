@@ -36,21 +36,13 @@ class PostsController < ApplicationController
   end
 
   def update
-    post = Post.find(params[:id])
+    post = current_user.posts.find(params[:id])
     post.update(post_params)
     redirect_to post
   end
 
   def edit
     @post = Post.find(params[:id])
-  end
-
-  def update
-    post = Post.find(params[:id])
-    if current_user.owns?(post)
-      post.update(post_params)
-    end
-    redirect_to post
   end
 
   private
