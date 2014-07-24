@@ -11,14 +11,14 @@ class Post < ActiveRecord::Base
   delegate :email, to: :user, prefix: true
 
   def self.spam
-    where(spam: true)
+    where(spam: true).order_by(updated_at: :desc)
   end
 
-  def spam!
+  def mark_spam
     update(spam: true)
   end
 
-  def not_spam!
+  def mark_not_spam
     update(spam: false)
   end
 end
