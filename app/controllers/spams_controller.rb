@@ -1,19 +1,31 @@
 class SpamsController < ApplicationController
   before_action :require_admin, only: [:create]
+
   def create
     post = Post.find(params[:post_id])
-    post.spam = true
-    post.save
+    mark_spam(post)
     redirect_to post
   end
 
   def destroy
     post = Post.find(params[:post_id])
-    post.spam = false
-    post.save
+    mark_not_spam(post)
     redirect_to post
   end
 
   def index
   end
+
+  private
+
+  def mark_not_spam(post)
+    post.spam = false
+    post.save
+  end
+
+  def mark_spam(post)
+    post.spam = true
+    post.save
+  end
+  
 end

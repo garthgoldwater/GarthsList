@@ -10,7 +10,7 @@
     <% end %>
     <p>Category: <%= link_to @post.category_name, @post.category %></p>
     <p>Region: <%= link_to @post.region_name, @post.region %></p>
-    <% if @post.spam %>
+    <% if @post.spam? %>
       <% if current_user.admin? %>
           <p><%= button_to "Unflag this post as spam", [@post, :spam], method: :delete %></p>
       <% end %>

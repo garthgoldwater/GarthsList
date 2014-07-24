@@ -10,7 +10,7 @@ class Post < ActiveRecord::Base
   delegate :name, to: :region, prefix: true
   delegate :email, to: :user, prefix: true
 
-  def spam
-    Post.find_by(spam: true)
+  def self.spam
+    find_by(spam: true)
   end
 end
