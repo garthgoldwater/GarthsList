@@ -15,4 +15,3 @@ class ImageUrlValidator < ActiveModel::EachValidator
     url.kind_of?(URI::HTTP) || url.kind_of?(URI::HTTPS) # this violates tell don't ask
   end
 end
-
