@@ -21,5 +21,8 @@ class Post < ActiveRecord::Base
 
   def mark_not_spam
     update(spam: false)
+
+  def self.recent_posts_for_region(region)
+    where(region_id: region.id).order(created_at: :desc)
   end
 end

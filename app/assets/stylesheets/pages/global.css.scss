@@ -2,7 +2,7 @@
   @include outer-container;
 }
 .page-title {
-  @include span-columns(9);
+  @include span-columns(12);
   margin: 50px 0 20px 0;
 }
 .sub-title {
@@ -37,21 +37,24 @@
   }
 }
 .list-grid {
-  li:hover {
-    @include animation-timing-function(ease);
-    background-color: $hover-link-color;
-  }
   li {
     @include span-columns(3);
     @include omega(4n);
-    text-align: center;
-    vertical-align: center;
-    margin-top: 15px;
-    padding: 40px 0;
-    border-radius: 100%;
-    background-color: $base-button-color;
+
     a {
+      display: block;
       color: white;
+      text-align: center;
+      vertical-align: center;
+      margin-top: 15px;
+      padding: 40px 5px;
+      border-radius: 25%;
+      background-color: $base-button-color;
+
+      &:hover {
+        @include animation-timing-function(ease);
+        background-color: $hover-link-color;
+      }
     }
   }
 }
