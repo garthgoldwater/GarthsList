@@ -1,5 +1,5 @@
 class SpamsController < ApplicationController
-  before_action :require_admin, only: [:create]
+  before_action :require_admin, only: [:destroy, :index]
 
   def create
     post = Post.find(params[:post_id])
