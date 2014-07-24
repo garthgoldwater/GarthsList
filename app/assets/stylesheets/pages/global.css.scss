@@ -28,6 +28,14 @@
   @include span-columns(3);
   margin: 60px 20px 20px 0;
 }
+.images {
+  @include outer-container;
+  .post-image {
+    @include span-columns(6);
+    @include omega(2n);
+    margin-top: 40px;
+  }
+}
 .list-grid {
   li:hover {
     @include animation-timing-function(ease);

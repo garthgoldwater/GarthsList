@@ -14,6 +14,13 @@ class ImagesController < ApplicationController
       render :new
     end
   end
+  
+  def destroy
+    image = Image.find(params[:id])
+    @post = Post.find(params[:post_id])
+    image.destroy
+    redirect_to [:new, @post, :image]
+  end
 
   private
 
