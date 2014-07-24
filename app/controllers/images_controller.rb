@@ -1,12 +1,12 @@
 class ImagesController < ApplicationController
 
   def new
-    @post = Post.find(params[:post_id])
+    @post = current_user.posts.find(params[:post_id])
     @image = Image.new
   end
 
   def create
-    @post = Post.find(params[:post_id])
+    @post = current_user.posts.find(params[:post_id])
     @image = @post.images.new(image_params)
 
     if @image.save
