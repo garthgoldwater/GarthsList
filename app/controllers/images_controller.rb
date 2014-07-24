@@ -11,6 +11,7 @@ class ImagesController < ApplicationController
     if @image.save
       redirect_to [:new, @post, :image]
     else
+      @post.reload
       render :new
     end
   end

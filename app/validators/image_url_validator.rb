@@ -1,7 +1,8 @@
-require 'uri'
-class ImageURLValidator < ActiveModel::EachValidator
+class ImageUrlValidator < ActiveModel::EachValidator
   def validate_each(record, attribute, value)
-    url_points_to_an_image?(value) && url_valid?(value)
+    unless url_points_to_an_image?(value) && url_valid?(value)
+      record.errors[attribute] << (options[:message] || "this is not a valid image link")
+    end
   end
 
   def url_points_to_an_image?(url)
