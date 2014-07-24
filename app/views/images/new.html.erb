@@ -6,5 +6,9 @@
       <%= form.text_field :url %>
       <%= form.submit "Add image to post" %>
     <% end %>
+    <%= button_to "Done", :posts, method: :get %>
+  </div>
+  <div class="images">
+    <%= render @post.images, post: @post %>
   </div>
 </section>
