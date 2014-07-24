@@ -8,6 +8,5 @@ class SpamsController < ApplicationController
   end
 
   def index
-    @posts_marked_spam = Post.find_by(spam: true)
   end
 end
