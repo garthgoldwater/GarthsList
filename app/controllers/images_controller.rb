@@ -1,4 +1,5 @@
 class ImagesController < ApplicationController
+
   def new
     @post = Post.find(params[:post_id])
     @image = Image.new
@@ -14,10 +15,10 @@ class ImagesController < ApplicationController
       render :new
     end
   end
-  
+
   def destroy
-    image = Image.find(params[:id])
-    @post = Post.find(params[:post_id])
+    @post = current_user.posts.find(params[:post_id])
+    image = @post.images.find(params[:id])
     image.destroy
     redirect_to [:new, @post, :image]
   end
