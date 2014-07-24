@@ -11,6 +11,6 @@ class Post < ActiveRecord::Base
   delegate :email, to: :user, prefix: true
 
   def self.spam
-    find_by(spam: true)
+    where(spam: true)
   end
 end
