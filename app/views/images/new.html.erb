@@ -1,0 +1,10 @@
+<section class="outer-container">
+  <h2 class="page-title">Add an image to <em><%= @post.title %>?</em></h2>
+  <div class="form">
+    <%= form_for [@post, @image] do |form| %>
+      <%= form.label :url, "Enter image url" %>
+      <%= form.text_field :url %>
+      <%= form.submit "Add image to post" %>
+    <% end %>
+  </div>
+</section>

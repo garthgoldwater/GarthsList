@@ -3,7 +3,7 @@
     <h4 class="sub-title"><%= @post.title.capitalize %></h4>
     <p>Posted by: <%= mail_to @post.user_email %></p>
     <p><%= @post.body %></p>
-    <% if current_user.owns?(@post) %>
+    <% if current_user.owns?(@post) || current_user.admin? %>
       <%= button_to "Edit this post", :post, method: :patch %>
       <%= button_to "Delete this post", :post, method: :delete %>
     <% end %>
