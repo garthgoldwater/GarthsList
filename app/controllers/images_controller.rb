@@ -17,8 +17,8 @@ class ImagesController < ApplicationController
   end
 
   def destroy
-    @post = current_user.posts.find(params[:post_id])
-    image = @post.images.find(params[:id])
+    post = current_user.posts.find(params[:post_id])
+    image = post.images.find(params[:id])
     image.destroy
     redirect_to [:new, @post, :image]
   end
