@@ -21,6 +21,5 @@ class ImagesController < ApplicationController
     params.require(:image).permit(
       :url,
     )
-
   end
 end
