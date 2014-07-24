@@ -13,4 +13,12 @@ class Post < ActiveRecord::Base
   def self.spam
     where(spam: true)
   end
+
+  def spam!
+    update(spam: true)
+  end
+
+  def not_spam!
+    update(spam: false)
+  end
 end
