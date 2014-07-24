@@ -5,7 +5,7 @@
     <p><%= @post.body %></p>
     <%= render @post.images, post: @post %>
     <% if current_user.owns?(@post) %>
-      <%= button_to "Edit this post", :post, method: :patch %>
+      <%= button_to "Edit this post", [:edit, :post], method: :get %>
       <%= button_to "Delete this post", :post, method: :delete %>
     <% end %>
     <p>Category: <%= link_to @post.category_name, @post.category %></p>
