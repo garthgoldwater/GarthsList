@@ -26,11 +26,7 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    if current_user.admin?
-      post = Post.find(params[:id])
-    else
-      post = current_user.posts.find(params[:id])
-    end
+    post = find_in_authorized_posts(params[:id])
     post.destroy
     redirect_to :posts
   end
@@ -40,11 +36,7 @@ class PostsController < ApplicationController
   end
 
   def update
-    if current_user.admin?
-      post = Post.find(params[:id])
-    else
-      post = current_user.posts.find(params[:id])
-    end
+    post = find_in_authorized_posts(params[:id])
     post.update(post_params)
     redirect_to post
   end
@@ -63,5 +55,13 @@ class PostsController < ApplicationController
       :category_id,
       :region_id,
     )
+  end
+
+  def find_in_authorized_posts(post_id)
+    if current_user.admin?
+      Post.find(params[:id])
+    else
+      current_user.posts.find(params[:id])
+    end
   end
 end
