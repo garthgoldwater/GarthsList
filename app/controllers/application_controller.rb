@@ -12,6 +12,6 @@ class ApplicationController < ActionController::Base
   end
 
   def make_paginatable(collection_proxy)
-Kaminari.paginate_array(collection_proxy).page(params[:page])
+    Kaminari.paginate_array(collection_proxy).page(params[:page])
   end
 end
