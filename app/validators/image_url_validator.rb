@@ -6,9 +6,7 @@ class ImageUrlValidator < ActiveModel::EachValidator
   end
 
   def url_points_to_an_image?(url)
-    # url =~ /.*\.png|\.jpg|\.jpeg|\.gif/
-    #
-    url.ends_with?(".png", ".jpg", ".jpeg", ".gif")
+    url.end_with?(".png", ".jpg", ".jpeg", ".gif")
   end
 
   def url_valid?(url)
