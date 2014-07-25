@@ -1,0 +1,1163 @@
+@import url(http://fonts.googleapis.com/css?family=Michroma);
+/* line 2, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 1, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/extends/_button.scss */
+button,
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: #11897d;
+  border-radius: 0.1875em;
+  color: white;
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+  padding: .75em 1em;
+  text-decoration: none;
+}
+/* line 13, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/extends/_button.scss */
+button:hover,
+input[type="submit"]:hover {
+  background-color: #09453f;
+  color: white;
+}
+
+/*!
+ *  Devicons 1.4.0 made by Theodore Vorillas / http://vorillaz.com
+ */
+@font-face {
+  font-family: 'devicons';
+  src: url("../fonts/devicons.eot?xqxft6");
+  src: url("../fonts/devicons.eot?#iefixxqxft6") format("embedded-opentype"), url("../fonts/devicons.woff?xqxft6") format("woff"), url("../fonts/devicons.ttf?xqxft6") format("truetype"), url("../fonts/devicons.svg?xqxft6#devicons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 16, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons {
+  font-family: 'devicons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-git:before {
+  content: "\e602";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-git_compare:before {
+  content: "\e628";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-git_branch:before {
+  content: "\e625";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-git_commit:before {
+  content: "\e629";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-git_pull_request:before {
+  content: "\e626";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-git_merge:before {
+  content: "\e627";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-bitbucket:before {
+  content: "\e603";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-github_alt:before {
+  content: "\e608";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-github_badge:before {
+  content: "\e609";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-github:before {
+  content: "\e60a";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-github_full:before {
+  content: "\e617";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-java:before {
+  content: "\e638";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-ruby:before {
+  content: "\e639";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-scala:before {
+  content: "\e637";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-python:before {
+  content: "\e63c";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-go:before {
+  content: "\e624";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-ruby_on_rails:before {
+  content: "\e63b";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-django:before {
+  content: "\e61d";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-markdown:before {
+  content: "\e63e";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-php:before {
+  content: "\e63d";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-mysql:before {
+  content: "\e604";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-streamline:before {
+  content: "\e605";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-database:before {
+  content: "\e606";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-laravel:before {
+  content: "\e63f";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-javascript:before {
+  content: "\e64e";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-angular:before {
+  content: "\e653";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-backbone:before {
+  content: "\e652";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-coffeescript:before {
+  content: "\e651";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-jquery:before {
+  content: "\e650";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-modernizr:before {
+  content: "\e620";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-jquery_ui:before {
+  content: "\e654";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-ember:before {
+  content: "\e61b";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-dojo:before {
+  content: "\e61c";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-nodejs:before {
+  content: "\e619";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-nodejs_small:before {
+  content: "\e618";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-javascript_shield:before {
+  content: "\e64f";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-bootstrap:before {
+  content: "\e647";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-sass:before {
+  content: "\e64b";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-css3_full:before {
+  content: "\e64a";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-css3:before {
+  content: "\e649";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-html5:before {
+  content: "\e636";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-html5_multimedia:before {
+  content: "\e632";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-html5_device_access:before {
+  content: "\e633";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-html5_3d_effects:before {
+  content: "\e635";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-html5_connectivity:before {
+  content: "\e634";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-ghost_small:before {
+  content: "\e614";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-ghost:before {
+  content: "\e61f";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-magento:before {
+  content: "\e640";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-joomla:before {
+  content: "\e641";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-jekyll_small:before {
+  content: "\e60d";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-drupal:before {
+  content: "\e642";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-wordpress:before {
+  content: "\e60b";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-grunt:before {
+  content: "\e64c";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-bower:before {
+  content: "\e64d";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-npm:before {
+  content: "\e61e";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-yahoo_small:before {
+  content: "\e62b";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-yahoo:before {
+  content: "\e615";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-bing_small:before {
+  content: "\e600";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-windows:before {
+  content: "\e60f";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-linux:before {
+  content: "\e612";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-ubuntu:before {
+  content: "\e63a";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-android:before {
+  content: "\e60e";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-apple:before {
+  content: "\e611";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-appstore:before {
+  content: "\e613";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-phonegap:before {
+  content: "\e630";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-blackberry:before {
+  content: "\e623";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-stackoverflow:before {
+  content: "\e610";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-techcrunch:before {
+  content: "\e62c";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-codrops:before {
+  content: "\e62f";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-css_tricks:before {
+  content: "\e601";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-smashing_magazine:before {
+  content: "\e62d";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-netmagazine:before {
+  content: "\e62e";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-codepen:before {
+  content: "\e616";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-cssdeck:before {
+  content: "\e62a";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-hackernews:before {
+  content: "\e61a";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-dropbox:before {
+  content: "\e607";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-google_drive:before {
+  content: "\e631";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-visualstudio:before {
+  content: "\e60c";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-unity_small:before {
+  content: "\e621";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-rasberry_pi:before {
+  content: "\e622";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-chrome:before {
+  content: "\e643";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-ie:before {
+  content: "\e644";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-firefox:before {
+  content: "\e645";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-opera:before {
+  content: "\e646";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-safari:before {
+  content: "\e648";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-swift:before {
+  content: "\e655";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-symfony:before {
+  content: "\e656";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-symfony_badge:before {
+  content: "\e657";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-less:before {
+  content: "\e658";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-stylus:before {
+  content: "\e659";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-trello:before {
+  content: "\e65a";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-atlassian:before {
+  content: "\e65b";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-jira:before {
+  content: "\e65c";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-envato:before {
+  content: "\e65d";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-snap_svg:before {
+  content: "\e65e";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-raphael:before {
+  content: "\e65f";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-google_analytics:before {
+  content: "\e660";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-compass:before {
+  content: "\e661";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-onedrive:before {
+  content: "\e662";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-gulp:before {
+  content: "\e663";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-atom:before {
+  content: "\e664";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-cisco:before {
+  content: "\e665";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-nancy:before {
+  content: "\e666";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-clojure:before {
+  content: "\e668";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-clojure_alt:before {
+  content: "\e66a";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-perl:before {
+  content: "\e669";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-celluloid:before {
+  content: "\e66b";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-w3c:before {
+  content: "\e66c";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-redis:before {
+  content: "\e66d";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-postgresql:before {
+  content: "\e66e";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-webplatform:before {
+  content: "\e66f";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-jenkins:before {
+  content: "\e667";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-requirejs:before {
+  content: "\e670";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-opensource:before {
+  content: "\e671";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-typo3:before {
+  content: "\e672";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-uikit:before {
+  content: "\e673";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-doctrine:before {
+  content: "\e674";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-groovy:before {
+  content: "\e675";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-ngnix:before {
+  content: "\e676";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-haskell:before {
+  content: "\e677";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-zend:before {
+  content: "\e678";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-gnu:before {
+  content: "\e679";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-yeoman:before {
+  content: "\e67a";
+}
+
+/* line 159, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/devicons.css.scss */
+.devicons-heroku:before {
+  content: "\e67b";
+}
+
+/* line 1, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #2e3192;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* line 10, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Michroma", sans-serif;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 17, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+h1 {
+  font-size: 2.25em;
+}
+
+/* line 21, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 25, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+h3 {
+  font-size: 1.75em;
+}
+
+/* line 29, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+h4 {
+  font-size: 1.5em;
+}
+
+/* line 33, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+h5 {
+  font-size: 1.25em;
+}
+
+/* line 37, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+h6 {
+  font-size: 1em;
+}
+
+/* line 41, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em;
+}
+
+/* line 45, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #11897d;
+  text-decoration: none;
+}
+/* line 50, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+a:hover {
+  color: #09453f;
+}
+/* line 54, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+a:active, a:focus {
+  color: #09453f;
+  outline: none;
+}
+
+/* line 60, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0;
+}
+
+/* line 68, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+img {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 73, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+blockquote {
+  border-left: 2px solid #dddddd;
+  color: #474bc5;
+  margin: 1.5em 0;
+  padding-left: 0.75em;
+}
+
+/* line 80, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+cite {
+  color: #6e71d1;
+  font-style: italic;
+}
+/* line 84, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_typography.scss */
+cite:before {
+  content: '\2014 \00A0';
+}
+
+/* line 1, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_forms.scss */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em;
+}
+
+/* line 10, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+}
+
+/* line 16, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em;
+}
+/* line 20, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_forms.scss */
+label.required:after {
+  content: "*";
+}
+/* line 24, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_forms.scss */
+label abbr {
+  display: none;
+}
+
+/* line 31, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 0.1875em;
+  border: 1px solid #dddddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%;
+}
+/* line 44, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_forms.scss */
+textarea:hover,
+input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+select[multiple=multiple]:hover {
+  border-color: #c4c4c4;
+}
+/* line 48, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_forms.scss */
+textarea:focus,
+input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+select[multiple=multiple]:focus {
+  border-color: #11897d;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(14, 114, 104, 0.7);
+  outline: none;
+}
+
+/* line 55, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 59, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+
+/* line 63, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_forms.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+}
+
+/* line 68, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_forms.scss */
+input[type="file"] {
+  margin-bottom: 0.75em;
+  padding-bottom: 0.5em;
+  width: 100%;
+}
+
+/* line 74, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_forms.scss */
+select {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 1.5em;
+}
+
+/* line 1, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 8, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+/* line 15, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 0.75em 0;
+}
+
+/* line 20, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_tables.scss */
+tr, td, th {
+  vertical-align: middle;
+}
+
+/* line 1, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_lists.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 19, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em;
+}
+/* line 22, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_lists.scss */
+dl dt {
+  font-weight: bold;
+  margin-top: 0.75em;
+}
+/* line 27, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_lists.scss */
+dl dd {
+  margin: 0;
+}
+
+/* line 2, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/base/_buttons.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* line 1, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/layouts/application.css.scss */
+.header {
+  max-width: 55em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 4, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/layouts/application.css.scss */
+.logo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+}
+/* line 38, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.logo:last-child {
+  margin-right: 0;
+}
+/* line 6, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/layouts/application.css.scss */
+.logo .logo-image {
+  width: 100%;
+  height: 90px;
+  background-image: url("garthslist_logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* line 14, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/layouts/application.css.scss */
+.tagline {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 74.10533%;
+  font-size: 1.5em;
+  margin-top: -30px;
+}
+/* line 38, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.tagline:last-child {
+  margin-right: 0;
+}
+
+/* line 19, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/layouts/application.css.scss */
+.nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-top: 5px;
+  text-align: right;
+}
+/* line 38, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.nav:last-child {
+  margin-right: 0;
+}
+/* line 23, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/layouts/application.css.scss */
+.nav .nav-col {
+  float: left;
+  display: block;
+  margin-right: 7.42297%;
+  width: 46.28851%;
+  margin-top: 5px;
+}
+/* line 38, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.nav .nav-col:last-child {
+  margin-right: 0;
+}
+
+/* line 1, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/pages/global.css.scss */
+.outer-container {
+  max-width: 55em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.outer-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 4, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/pages/global.css.scss */
+.page-title {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin: 50px 0 20px 0;
+}
+/* line 38, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.page-title:last-child {
+  margin-right: 0;
+}
+
+/* line 8, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/pages/global.css.scss */
+.sub-title {
+  margin: 20px 10px;
+}
+
+/* line 11, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/pages/global.css.scss */
+.form {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+/* line 38, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.form:last-child {
+  margin-right: 0;
+}
+
+/* line 14, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/pages/global.css.scss */
+.post {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-left: 17.05961%;
+  text-align: center;
+  margin-top: 50px;
+}
+/* line 38, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.post:last-child {
+  margin-right: 0;
+}
+/* line 19, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/pages/global.css.scss */
+.post p {
+  margin: 30px 0;
+  font-size: 1.1em;
+}
+/* line 22, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/pages/global.css.scss */
+.post p .post-button {
+  margin: 20px 0;
+}
+
+/* line 27, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/pages/global.css.scss */
+.post-button {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  margin: 60px 20px 20px 0;
+}
+/* line 38, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.post-button:last-child {
+  margin-right: 0;
+}
+
+/* line 31, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/pages/global.css.scss */
+.images {
+  max-width: 55em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 15, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+.images:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 33, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/pages/global.css.scss */
+.images .post-image {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  margin-top: 40px;
+}
+/* line 38, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.images .post-image:last-child {
+  margin-right: 0;
+}
+/* line 52, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_omega.scss */
+.images .post-image:nth-child(2n) {
+  margin-right: 0;
+}
+/* line 57, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_omega.scss */
+.images .post-image:nth-child(2n+1) {
+  clear: left;
+}
+
+/* line 40, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/pages/global.css.scss */
+.list-grid li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+}
+/* line 38, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_span-columns.scss */
+.list-grid li:last-child {
+  margin-right: 0;
+}
+/* line 52, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_omega.scss */
+.list-grid li:nth-child(4n) {
+  margin-right: 0;
+}
+/* line 57, /Users/PhilGutowski/.gem/ruby/2.1.2/gems/neat-1.5.1/app/assets/stylesheets/grid/_omega.scss */
+.list-grid li:nth-child(4n+1) {
+  clear: left;
+}
+/* line 44, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/pages/global.css.scss */
+.list-grid li a {
+  display: block;
+  color: white;
+  text-align: center;
+  vertical-align: center;
+  margin-top: 15px;
+  padding: 40px 5px;
+  border-radius: 25%;
+  background-color: #11897d;
+}
+/* line 54, /Users/PhilGutowski/Dropbox/Programs/Metis/garthslist/GarthsList/app/assets/stylesheets/pages/global.css.scss */
+.list-grid li a:hover {
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  animation-timing-function: ease;
+  background-color: #09453f;
+}
