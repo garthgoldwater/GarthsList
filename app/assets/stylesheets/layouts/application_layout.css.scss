@@ -1,6 +1,12 @@
 .header {
   @include outer-container;
 }
+
+.icons {
+  position: fixed;
+  font-size: 5em;
+}
+
 .logo {
   @include span-columns(8);
   .logo-image {
@@ -11,11 +17,13 @@
     background-repeat: no-repeat;
   }
 }
+
 .tagline {
   @include span-columns(6 of 8);
   font-size: 1.5em;
   margin-top: -30px;
 }
+
 .nav {
   @include span-columns(4);
   margin-top: 5px;
