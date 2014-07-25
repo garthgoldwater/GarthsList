@@ -6,12 +6,14 @@ class ImageUrlValidator < ActiveModel::EachValidator
   end
 
   def url_points_to_an_image?(url)
-    url =~ /.*\.png|\.jpg|\.jpeg|\.gif/
+    # url =~ /.*\.png|\.jpg|\.jpeg|\.gif/
+    #
+    url.ends_with?(".png", ".jpg", ".jpeg", ".gif")
   end
 
   def url_valid?(url)
     # this method's source is based on https://coderwall.com/p/ztig5g
     url = URI.parse(url)
-    url.kind_of?(URI::HTTP) || url.kind_of?(URI::HTTPS) # this violates tell don't ask
+    url.kind_of?(URI::HTTP) || url.kind_of?(URI::HTTPS)
   end
 end
