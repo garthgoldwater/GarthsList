@@ -4,7 +4,7 @@
     <p>Posted by: <%= mail_to @post.user_email %></p>
     <p><%= @post.body %></p>
     <%= render @post.images, post: @post %>
-    <% if current_user.owns?(@post) %>
+    <% if current_user.owns?(@post) || current_user.admin? %>
       <%= button_to "Edit this post", [:edit, :post], method: :get %>
       <%= button_to "Delete this post", :post, method: :delete %>
     <% end %>
