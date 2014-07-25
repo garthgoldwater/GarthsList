@@ -40,7 +40,11 @@ class PostsController < ApplicationController
   end
 
   def update
-    post = current_user.posts.find(params[:id])
+    if current_user.admin?
+      post = Post.find(params[:id])
+    else
+      post = current_user.posts.find(params[:id])
+    end
     post.update(post_params)
     redirect_to post
   end
