@@ -59,9 +59,9 @@ class PostsController < ApplicationController
 
   def find_in_authorized_posts(post_id)
     if current_user.admin?
-      Post.find(params[:id])
+      Post.find(post_id)
     else
-      current_user.posts.find(params[:id])
+      current_user.posts.find(post_id)
     end
   end
 end
