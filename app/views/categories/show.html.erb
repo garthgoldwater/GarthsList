@@ -2,7 +2,8 @@
   <h2 class="page-title">All posts in the <%= @category.name.downcase %> category</h2>
   <div class="list-grid">
     <ul>
-      <%= render @category.posts %>
+      <%= render @posts %>
     </ul>
   </div>
 </section>
+<%= paginate @posts %>

@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = current_user.posts.page params[:page]
+    @posts = make_paginatable(current_user.posts)
     @post = Post.new
   end
 
