@@ -14,6 +14,6 @@ class SpamsController < ApplicationController
   end
 
   def index
-    @spam_posts = make_paginatable(Post.spam)
+    @spam_posts = Post.spam.page
   end
 end

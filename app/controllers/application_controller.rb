@@ -10,8 +10,4 @@ class ApplicationController < ActionController::Base
       redirect_to :landing
     end
   end
-
-  def make_paginatable(collection_proxy)
-    Kaminari.paginate_array(collection_proxy).page(params[:page])
-  end
 end
