@@ -8,7 +8,7 @@ class CategoriesController < ApplicationController
 
   def show
     @category = Category.find(params[:id])
-    @posts = @category.posts.page
+    @posts = @category.posts.page(params[:page])
   end
 
   def create

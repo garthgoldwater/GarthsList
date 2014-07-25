@@ -14,6 +14,6 @@ class SpamsController < ApplicationController
   end
 
   def index
-    @spam_posts = Post.spam.page
+    @spam_posts = Post.spam.page(params[:page])
   end
 end
