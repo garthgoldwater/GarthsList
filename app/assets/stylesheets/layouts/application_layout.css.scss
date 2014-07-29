@@ -12,7 +12,7 @@
   .logo-image {
     @include fill-parent();
     height: 90px;
-    background-image: url("garthslist_logo.png");
+    background-image: image-url("garthslist_logo.png");
     background-size: contain;
     background-repeat: no-repeat;
   }
