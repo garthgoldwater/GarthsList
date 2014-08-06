@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140723220101) do
+ActiveRecord::Schema.define(version: 20140806211427) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,12 +41,11 @@ ActiveRecord::Schema.define(version: 20140723220101) do
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
     t.integer  "category_id",                 null: false
-    t.integer  "region_id",                   null: false
     t.boolean  "spam",        default: false, null: false
+    t.integer  "region_id",                   null: false
   end
 
   add_index "posts", ["category_id"], name: "index_posts_on_category_id", using: :btree
-  add_index "posts", ["region_id"], name: "index_posts_on_region_id", using: :btree
   add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
 
   create_table "regions", force: true do |t|
