@@ -5,6 +5,10 @@
 .icons {
   position: fixed;
   font-size: 5em;
+  display: block;
+  @include media(max-width 1000px, 12) {
+    display: none;
+  }
 }
 
 .logo {
