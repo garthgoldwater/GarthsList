@@ -26,17 +26,17 @@ class PostsController < ApplicationController
   end
 
   def destroy
-    post = current_user.posts.find(params[:id])
+    post = current_user.authorized_posts.find(params[:id])
     post.destroy
     redirect_to :posts
   end
 
   def edit
-    @post = current_user.posts.find(params[:id])
+    @post = current_user.authorized_posts.find(params[:id])
   end
 
   def update
-    post = current_user.posts.find(params[:id])
+    post = current_user.authorized_posts.find(params[:id])
     post.update(post_params)
     redirect_to post
   end
